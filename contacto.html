@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">Elian Bustamante</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="biografia.html">Biografia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACIÓN<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> e.bustamante02@ufromail.cl</p>
+                <p><span class="fa fa-mobile"></span> +56 9 58692957</p>
+            </section>
+        </section>
+
+        <form class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" required>
+
+                <label for="email">Correo electronico *</label>
+                <input type="email" id="email" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+</body>
+
+</html>

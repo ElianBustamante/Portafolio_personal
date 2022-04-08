@@ -1,0 +1,339 @@
+/* UTILITIES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    background-image: url('../images/fondo_principal.jpg');
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: teal;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+/* LOGO */
+.logo {
+    font-size: 29px;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+/* DROPDOWN MENU */
+.services {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute;
+   
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+.dropdown li:hover {
+    background-color: #4c9e9e;
+}
+
+.services:hover .dropdown {
+    display: block;
+}
+
+/* FORMULARIO =================================== */
+
+.form_wrap {
+    width: 1050px;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Informacion de Contacto*/
+
+.cantact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #4091EC;
+    opacity: 0.9;
+}
+
+.cantact_info {
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url('../images/fondo_contacto.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.info_title {
+    margin-bottom: 60px;
+}
+
+.info_title span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span {
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+/* Formulario de contacto*/
+form.form_contact {
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"] {
+    width: 180px;
+    background: #4091EC;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover {
+    background: #3371B6;
+}
+
+/* Biografia */
+.biografia-block {
+    width: 80%;
+    background-color: rgb(20, 20, 20);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    padding: 30px 40px 30px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.biografia-titulo {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(208, 208, 208);
+}
+
+.biografia-linea {
+    color: rgb(78, 78 , 78);
+    border-style: solid;
+}
+
+.biografia-left {
+    float: left;
+    height: 80%;
+    width: 50%;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: justify;
+    color: rgb(208, 208, 208);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.biografia-right {
+    float: right;
+    height: 80%;
+    width: 50%;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: justify;
+    color: rgb(208, 208, 208);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.btn-contactame {
+    font-size: large;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-style: solid;
+    border-color: #3371B6;
+    border-radius: 15px;
+    border-width: 3px;
+    padding: 10px 35px 10px 35px;
+    text-decoration: none;
+    color: rgb(208, 208, 208);
+}
+
+.btn-contactame:hover {
+    background-color: rgb(208, 208, 208);
+    border-color: rgb(208, 208, 208);
+    color: black;
+}
+
+.proyectos-block {
+    width: 90%;
+    background-color: rgb(20, 20, 20);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 30px 40px 30px 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.proyectos-titulo {
+    padding-bottom: 10px;
+    font-size: 29px;
+    font-weight: 100;
+    color: rgb(208, 208, 208);
+}
+
+.proyecto-1 {
+    color: rgb(208, 208, 208);
+    text-align: justify;
+}
+
+.img-proyecto {
+    border-radius: 10px;
+}
